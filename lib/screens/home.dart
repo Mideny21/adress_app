@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../components/cateogry_view.dart';
 import '../widgets/blue_bar.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -14,9 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: ListView(
-      children: [
-        BlueBar(),
-      ],
+      children: [BlueBar(), CategoryView()],
     ));
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'ads_screen.dart';
 import 'home.dart';
+import 'listing_address.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -24,7 +25,7 @@ class _MainScreenState extends State<MainScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    _pages = <Widget>[HomeScreen(), AdsScreen()];
+    _pages = <Widget>[HomeScreen(), AdsScreen(), BusinessAddress()];
   }
 
   @override
@@ -40,6 +41,10 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.animation_outlined),
             label: 'ads',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.animation_outlined),
+            label: 'list',
           ),
         ],
         currentIndex: _selectedIndex, //New

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'ads_screen.dart';
+import 'details_screen.dart';
 import 'home.dart';
 import 'listing_address.dart';
 
@@ -25,7 +26,7 @@ class _MainScreenState extends State<MainScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    _pages = <Widget>[HomeScreen(), AdsScreen(), BusinessAddress()];
+    _pages = <Widget>[HomeScreen(), DetailsScreen(), BusinessAddress()];
   }
 
   @override
